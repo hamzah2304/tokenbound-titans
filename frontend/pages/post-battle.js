@@ -7,7 +7,7 @@ const PostBattle = () => {
     <div className="flex flex-col justify-center outerflexpost">
       {/* Winner Prize Card */}
       <div className="wineth flex items-center justify-center text-white font-bold py-2 px-4 rounded-lg text-2xl mr-4">
-        <p>WINNER&nbsp;</p><span>+ 0.5 ETH</span>
+        <p>WINNER&nbsp;</p><span>+ 0.05 ETH</span>
       </div>
       <div className="flex mb-8 winnerwrapper">
         {/* Very Large Image Card */}
@@ -25,7 +25,7 @@ const PostBattle = () => {
         {/* Very small Image Card */}
         <img src={urll} alt="loser" className="loser w-full rounded-lg"/>
         <div className="losseth flex justify-center items-center font-bold py-2 px-4 rounded-lg ml-4">
-          - 0.5 ETH
+          - 0.05 ETH
         </div>
       </div>
 
