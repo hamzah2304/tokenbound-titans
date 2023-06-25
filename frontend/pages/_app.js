@@ -42,6 +42,7 @@ const { connectors } = getDefaultWallets({
   chains,
 });
 
+
 const wagmiClient = createClient({
   autoConnect: true,
   connectors,
@@ -57,6 +58,7 @@ function MyApp({ Component, pageProps }) {
       if (!isReconnected) router.reload();
     },
   });
+
   return (
     <WagmiConfig client={wagmiClient}>
       <RainbowKitProvider

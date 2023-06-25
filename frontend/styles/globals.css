@@ -1,14 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,500;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* html,
+html,
 body {
   background-color: black;
-  font-family: "Rubik";
+  font-family: "Montserrat";
   font-weight: normal;
+  box-shadow: inset 0px 0px 100px 30px rgba(62, 182, 168, 0.322);
 }
 h1 {
   margin-bottom: 1rem;
@@ -34,7 +35,23 @@ a {
   margin: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-  }
-} */
+.titancard {
+  background-color: rgba(31, 41, 55,0.5);
+  border: rgb(31 41 55) 2px solid;
+  border-radius: 5px;
+}
+
+button.bg-turq-custom-500 {
+  background: rgb(39, 131, 120)
+}
+
+.invent-row {
+  place-content: flex-start;
+}
+
+.invent-row > img {
+  margin-right:10px;
+  border: black 1px solid;
+  border-radius:0.3em;
+}
+

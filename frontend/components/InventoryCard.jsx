@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const InventoryCard = () => {
+const InventoryCard = ({url1,url2,url3,url4,url5}) => {
   const [equipped1, setEquipped1] = useState(false);
   const [equipped2, setEquipped2] = useState(false);
   const [equipped3, setEquipped3] = useState(false);
@@ -29,13 +29,13 @@ const InventoryCard = () => {
       <div className="flex justify-between">
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image1.jpg"
+            src={url1}
             alt="Inventory Image 1"
             className="w-1/4"
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped1 ? "bg-red-500" : "bg-green-500"
+              equipped1 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip1}
           >
@@ -44,13 +44,13 @@ const InventoryCard = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image2.jpg"
+            src={url2}
             alt="Inventory Image 2"
             className="w-1/4"
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped2 ? "bg-red-500" : "bg-green-500"
+              equipped2 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip2}
           >
@@ -59,13 +59,13 @@ const InventoryCard = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image3.jpg"
+            src={url3}
             alt="Inventory Image 3"
             className="w-1/4"
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped3 ? "bg-red-500" : "bg-green-500"
+              equipped3 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip3}
           >
@@ -74,13 +74,13 @@ const InventoryCard = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image4.jpg"
+            src={url4}
             alt="Inventory Image 4"
             className="w-1/4"
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped4 ? "bg-red-500" : "bg-green-500"
+              equipped4 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip4}
           >
@@ -89,13 +89,13 @@ const InventoryCard = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image5.jpg"
+            src={url5}
             alt="Inventory Image 5"
-            className="w-1/4"
+            className="w-1/4 "
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped5 ? "bg-red-500" : "bg-green-500"
+              equipped5 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip5}
           >

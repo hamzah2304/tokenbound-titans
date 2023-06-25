@@ -1,28 +1,28 @@
 import React from "react";
 
-const TitanBattleCard = () => {
+const TitanBattleCard = ({url}) => {
   // Sample data for dynamic health points bar
   const healthPoints = 75;
   const maxHealthPoints = 100;
   const healthPercentage = (healthPoints / maxHealthPoints) * 100;
 
   return (
-    <div className="bg-gray-800 border border-black rounded-lg shadow-md p-8">
+    <div className="titancard border border-black rounded-lg shadow-md p-8">
       <h2 className="text-3xl font-bold text-white text-center mb-6">
         Titan Name. Level X. Owner: X
       </h2>
 
       {/* Image Section */}
-      <div className="mb-6 border-b-2 border-white">
+      <div className="mb-6 border-white">
         <img
-          src="/path/to/image.jpg"
+          src={url}
           alt="Card Image"
           className="w-full rounded-lg"
         />
       </div>
 
       {/* Health Points Bar Section */}
-      <div className="bg-gray-600 h-12 rounded-lg mb-6 border-b-2 border-white">
+      <div className="bg-gray-600 h-9 rounded-lg mb-6 border-white">
         <div
           className="bg-green-500 h-full rounded-lg"
           style={{ width: `${healthPercentage}%` }}

@@ -5,14 +5,14 @@ const Battle = () => {
   return (
     <div className="flex justify-center items-start h-screen pt-20">
       <div className="w-1/3"></div> {/* Left-side whitespace */}
-      <TitanBattleCard />
+      <TitanBattleCard url="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" />
       <div className="w-1/3 flex flex-col items-center justify-center">
         <button className="bg-red-500 text-white font-bold py-2 px-4 rounded">
           Skip
         </button>
       </div>{" "}
       {/* Button Section */}
-      <TitanBattleCard />
+      <TitanBattleCard url="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" />
       <div className="w-1/3"></div> {/* Right-side whitespace */}
     </div>
   );
