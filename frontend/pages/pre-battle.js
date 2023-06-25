@@ -4,7 +4,15 @@ import InventoryCard from "../components/InventoryCard";
 import BattleButton from "../components/BattleButton";
 import BattleStats from "../components/BattleStats";
 
-export default async function PreBattle() {
+async function getfetch(uri) {
+  return await fetch(uri).then(res => {
+    res.json().then((res) => {
+      return res;
+    });
+  });
+}
+
+export default function PreBattle() { //async
 
 
   // addresses for the inventory nfts
@@ -24,22 +32,19 @@ export default async function PreBattle() {
 
   // get the metadata from inventory items
   const metadataobj = {};
-  for (var [inventory, uri] of Object.entries(uriobj)) {
-    console.log(uri);
-    fetch(uri).then(res => {
-      res.json().then((res) => {
-        metadataobj[inventory] = res;
-        console.log(metadataobj[inventory]);
-      });
-    });
-  }
+
+  // for (var [inventory, uri] of Object.entries(uriobj)) {
+  //   console.log(uri);
+  //   metadataobj[inventory] = await getfetch(uri);
+  //   console.log(metadataobj[inventory]); 
+  // }
 
   
   return (
     <div className="flex flex-col items-center">
       <div className="flex justify-evenly w-4/5">
         <div className="w-1/3 mx-2">
-          <TitanCard url1="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url2="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" health={metadataobj['firstsword'].attributes['attack']}/>
+          <TitanCard url1="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url2="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" />
         </div>
         <div className="w-1/3 mx-2">
           <TitanCard url1="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url2="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY"/>

@@ -13,7 +13,7 @@ const TitanCard = ({url1, url2}) => {
   };
 
   return (
-    <div className="bg-gray-800 text-white border border-black rounded-lg shadow-md p-4">
+    <div className="titancard bg-gray-800 text-white border border-black rounded-lg shadow-md p-4">
       {/* Image section */}
       <div className="mb-4 flex flex-col items-center">
         <img src={url1} alt="Image" className="w-full" />
@@ -35,27 +35,9 @@ const TitanCard = ({url1, url2}) => {
       <div className="border-t border-gray-700 py-4">
         <h3 className="text-lg font-medium mb-2">Inventory</h3>
         <div className="flex flex-col gap-4">
-          <div className="flex items-center">
-            <img src={url2} alt="Image 1" className="w-1/4" />
-            <button
-              className={`px-4 py-2 rounded-md ${
-                equipped1 ? "bg-red-500" : "bg-green-500"
-              }`}
-              onClick={toggleEquip1}
-            >
-              {equipped1 ? "Unequip" : "Equip"}
-            </button>
-          </div>
-          <div className="flex items-center">
-            <img src="/path/to/image2.jpg" alt="Image 2" className="w-1/4" />
-            <button
-              className={`px-4 py-2 rounded-md ${
-                equipped2 ? "bg-red-500" : "bg-green-500"
-              }`}
-              onClick={toggleEquip2}
-            >
-              {equipped2 ? "Unequip" : "Equip"}
-            </button>
+          <div className="invent-row flex" styles="place-content:flex-start">
+            <img src={url1} alt="Image 1" className="w-1/4" />
+            <img src={url2} alt="Image 2" className="w-1/4" />
           </div>
         </div>
       </div>

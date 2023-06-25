@@ -35,7 +35,7 @@ const InventoryCard = ({url1,url2,url3,url4,url5}) => {
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped1 ? "bg-red-500" : "bg-green-500"
+              equipped1 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip1}
           >
@@ -50,7 +50,7 @@ const InventoryCard = ({url1,url2,url3,url4,url5}) => {
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped2 ? "bg-red-500" : "bg-green-500"
+              equipped2 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip2}
           >
@@ -65,7 +65,7 @@ const InventoryCard = ({url1,url2,url3,url4,url5}) => {
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped3 ? "bg-red-500" : "bg-green-500"
+              equipped3 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip3}
           >
@@ -80,7 +80,7 @@ const InventoryCard = ({url1,url2,url3,url4,url5}) => {
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped4 ? "bg-red-500" : "bg-green-500"
+              equipped4 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip4}
           >
@@ -91,11 +91,11 @@ const InventoryCard = ({url1,url2,url3,url4,url5}) => {
           <img
             src={url5}
             alt="Inventory Image 5"
-            className="w-1/4"
+            className="w-1/4 "
           />
           <button
             className={`px-4 py-2 rounded-md ${
-              equipped5 ? "bg-red-500" : "bg-green-500"
+              equipped5 ? "bg-red-500" : "bg-turq-custom-500"
             }`}
             onClick={toggleEquip5}
           >
