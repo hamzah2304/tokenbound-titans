@@ -23,23 +23,12 @@ const main = async () => {
 
   console.log(tokenBoundAccount); //0x148065ae43beC6D4C9aA2a75EC5f282553c5a1c8
 
-  try {
-    const createAccount = await tokenboundClient.createAccount({
-      tokenContract: TOKEN_CONTRACT_ADDRESS,
-      tokenId: 1,
-    });
-
-    console.log(createAccount);
-  } catch (error) {
-    console.log(error);
-    process.exit(1);
-  }
-
+  // unequip function
   const executedCall = await tokenboundClient.executeCall({
-    account: "<account_address>",
-    to: "<recipient_address>",
-    value: "<wei_value>",
-    data: "<data>",
+    account: "0x148065ae43beC6D4C9aA2a75EC5f282553c5a1c8", // TBA
+    to: "0x120cD09e06055D87a92A432e17D739351ee0168f", // NFT Shield address
+    value: "0",
+    data: "0x42842e0e000000000000000000000000148065ae43bec6d4c9aa2a75ec5f282553c5a1c8000000000000000000000000968e51108d076a7dce32472bfb3c288fcc35e8450000000000000000000000000000000000000000000000000000000000000002",
   });
 
   console.log(executedCall); //...
