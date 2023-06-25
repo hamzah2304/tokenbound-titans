@@ -5,7 +5,8 @@ const Home = () => {
   //   const [wallet, setWalletAddress] = useState("");
   const wallet = "0x968E51108d076A7dCE32472BFb3C288fCc35e845";
   //   const [collection, setCollectionAddress] = useState("");
-  const collection = "0x120cD09e06055D87a92A432e17D739351ee0168f";
+  //const collection = "0x120cD09e06055D87a92A432e17D739351ee0168f"; //0x7742103f700511f8f39F926422C4B249c93CcD60
+  const collection = "0x7742103f700511f8f39F926422C4B249c93CcD60";
   const [NFTs, setNFTs] = useState([]);
   const [fetchForCollection, setFetchForCollection] = useState(false);
 
