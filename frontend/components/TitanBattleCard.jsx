@@ -1,6 +1,6 @@
 import React from "react";
 
-const TitanBattleCard = ({url}) => {
+const TitanBattleCard = ({name,level,owner,url,eq1,eq2,id,idtxt}) => {
   // Sample data for dynamic health points bar
   const healthPoints = 75;
   const maxHealthPoints = 100;
@@ -8,32 +8,32 @@ const TitanBattleCard = ({url}) => {
 
   return (
     <div className="titancard border border-black rounded-lg shadow-md p-8">
-      <h2 className="text-3xl font-bold text-white text-center mb-6">
-        Titan Name. Level X. Owner: X
-      </h2>
+      <h2 className="titlebtl text-xl turq-col font-bold text-white text-center mb-6">{name}</h2>
+      <h4 className="subtitlebtl text-white text-center mb-6">level {level}&nbsp;&nbsp;–&nbsp;&nbsp;<span className="turq-col">{owner}</span></h4>
 
       {/* Image Section */}
       <div className="mb-6 border-white">
         <img
           src={url}
           alt="Card Image"
-          className="w-full rounded-lg"
+          className="w-full rounded-lg titanimg"
         />
       </div>
 
       {/* Health Points Bar Section */}
       <div className="bg-gray-600 h-9 rounded-lg mb-6 border-white">
-        <div
+        <div id={id}
           className="bg-green-500 h-full rounded-lg"
           style={{ width: `${healthPercentage}%` }}
-        ></div>
+        >
+          <p id={idtxt}>"{healthPercentage}"</p>
+        </div>
       </div>
 
       {/* Image Stack Section */}
-      <div>
-        <img src="/path/to/image1.jpg" alt="Image 1" className="w-full mb-4" />
-        <img src="/path/to/image2.jpg" alt="Image 2" className="w-full mb-4" />
-        <img src="/path/to/image3.jpg" alt="Image 3" className="w-full" />
+      <div class="invbattle">
+        <img src={eq1} alt="Image 1" className="w-full mb-4 titaneqpimg" />
+        <img src={eq2} alt="Image 2" className="w-full mb-4 titaneqpimg" />
       </div>
     </div>
   );

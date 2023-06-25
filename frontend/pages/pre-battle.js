@@ -49,10 +49,7 @@ export default function PreBattle() {
     <div className="flex flex-col items-center">
       <div className="flex justify-evenly w-4/5">
         <div className="w-1/3 mx-2">
-          <TitanCard
-            url1="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY"
-            url2="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY"
-          />
+
         </div>
         <div className="w-1/3 mx-2">
           <TitanCard
@@ -76,10 +73,7 @@ export default function PreBattle() {
           url5="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY"
         />
 
-        <div className="my-8">
-          <BattleStats />
-        </div>
-        <div className="flex justify-end w-80%">
+        <div className="startbattlediv flex justify-end w-80%">
           <BattleButton />
         </div>
       </div>
