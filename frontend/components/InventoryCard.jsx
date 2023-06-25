@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const InventoryCard = () => {
+const InventoryCard = ({url1,url2,url3,url4,url5}) => {
   const [equipped1, setEquipped1] = useState(false);
   const [equipped2, setEquipped2] = useState(false);
   const [equipped3, setEquipped3] = useState(false);
@@ -29,7 +29,7 @@ const InventoryCard = () => {
       <div className="flex justify-between">
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image1.jpg"
+            src={url1}
             alt="Inventory Image 1"
             className="w-1/4"
           />
@@ -44,7 +44,7 @@ const InventoryCard = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image2.jpg"
+            src={url2}
             alt="Inventory Image 2"
             className="w-1/4"
           />
@@ -59,7 +59,7 @@ const InventoryCard = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image3.jpg"
+            src={url3}
             alt="Inventory Image 3"
             className="w-1/4"
           />
@@ -74,7 +74,7 @@ const InventoryCard = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image4.jpg"
+            src={url4}
             alt="Inventory Image 4"
             className="w-1/4"
           />
@@ -89,7 +89,7 @@ const InventoryCard = () => {
         </div>
         <div className="flex flex-col items-center">
           <img
-            src="/path/to/inventory-image5.jpg"
+            src={url5}
             alt="Inventory Image 5"
             className="w-1/4"
           />

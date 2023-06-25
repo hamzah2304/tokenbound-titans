@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TitanCard = () => {
+const TitanCard = ({url1, url2}) => {
   const [equipped1, setEquipped1] = useState(false);
   const [equipped2, setEquipped2] = useState(false);
 
@@ -16,7 +16,7 @@ const TitanCard = () => {
     <div className="bg-gray-800 text-white border border-black rounded-lg shadow-md p-4">
       {/* Image section */}
       <div className="mb-4 flex flex-col items-center">
-        <img src="/path/to/image.jpg" alt="Image" className="w-full" />
+        <img src={url1} alt="Image" className="w-full" />
         <h2 className="text-2xl font-bold mt-2">Titan Name</h2>
       </div>
 
@@ -36,7 +36,7 @@ const TitanCard = () => {
         <h3 className="text-lg font-medium mb-2">Inventory</h3>
         <div className="flex flex-col gap-4">
           <div className="flex items-center">
-            <img src="/path/to/image1.jpg" alt="Image 1" className="w-1/4" />
+            <img src={url2} alt="Image 1" className="w-1/4" />
             <button
               className={`px-4 py-2 rounded-md ${
                 equipped1 ? "bg-red-500" : "bg-green-500"
