@@ -169,9 +169,6 @@ export default function PreBattle() {
               })}
           </div>
         </div>
-        <div className="my-8">
-          <BattleStats />
-        </div>
         <div className="flex justify-end w-80%">
           <BattleButton />
         </div>

@@ -65,10 +65,10 @@ const TitanCard = ({ nft, owner }) => {
       <div className="border-t border-gray-700 py-4">
         <h3 className="text-lg font-medium mb-2 text-center">Stats</h3>
         <ul className="titanstats text-blue-500">
-          <li>Health: {nft.metadata.attributes[0].value}</li>
-          <li>Attack: {nft.metadata.attributes[1].value}</li>
-          <li>Speed: {nft.metadata.attributes[2].value}</li>
-          <li>Armour: {nft.metadata.attributes[3].value}</li>
+          <li>Health: <span>{nft.metadata.attributes[0].value}</span></li>
+          <li>Attack: <span>{nft.metadata.attributes[1].value}</span></li>
+          <li>Speed: <span>{nft.metadata.attributes[2].value}</span></li>
+          <li>Armour: <span>{nft.metadata.attributes[3].value}</span></li>
         </ul>
       </div>
 
