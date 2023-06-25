@@ -3,7 +3,6 @@ import TitanCard from "../components/TitanCard";
 import InventoryCard from "../components/InventoryCard";
 import BattleButton from "../components/BattleButton";
 import BattleStats from "../components/BattleStats";
-import NftGallery from "../components/nftGallery";
 
 const ALCHEMY_API_KEY = process.env.ALCHEMY_API_KEY;
 
@@ -84,7 +83,6 @@ export default function PreBattle() {
           <BattleButton />
         </div>
       </div>
-      <NftGallery wallet={wallet} />
     </div>
   );
 }
