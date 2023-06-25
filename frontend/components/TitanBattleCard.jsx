@@ -16,7 +16,7 @@ const TitanBattleCard = ({name,level,owner,url,eq1,eq2,id,idtxt}) => {
         <img
           src={url}
           alt="Card Image"
-          className="w-full rounded-lg"
+          className="w-full rounded-lg titanimg"
         />
       </div>
 
@@ -32,8 +32,8 @@ const TitanBattleCard = ({name,level,owner,url,eq1,eq2,id,idtxt}) => {
 
       {/* Image Stack Section */}
       <div class="invbattle">
-        <img src={eq1} alt="Image 1" className="w-full mb-4" />
-        <img src={eq2} alt="Image 2" className="w-full mb-4" />
+        <img src={eq1} alt="Image 1" className="w-full mb-4 titaneqpimg" />
+        <img src={eq2} alt="Image 2" className="w-full mb-4 titaneqpimg" />
       </div>
     </div>
   );

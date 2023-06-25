@@ -44,7 +44,7 @@ export default function PreBattle() { //async
     <div className="flex flex-col items-center">
       <div className="flex justify-evenly w-4/5">
         <div className="w-1/3 mx-2">
-          <TitanCard url1="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url2="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" />
+          <TitanCard url1="/mon0.jpg" />
         </div>
         <div className="w-1/3 mx-2">
           <TitanCard url1="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url2="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY"/>
@@ -56,9 +56,6 @@ export default function PreBattle() { //async
       <div className="w-4/5 mt-8">
         <InventoryCard url1="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url2="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url3="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url4="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY" url5="https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY"/>
 
-        <div className="my-8">
-          <BattleStats />
-        </div>
         <div className="startbattlediv flex justify-end w-80%">
           <BattleButton />
         </div>

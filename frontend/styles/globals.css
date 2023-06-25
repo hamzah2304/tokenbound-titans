@@ -42,6 +42,14 @@ a {
   border-radius: 5px;
 }
 
+.startbattlebtn {
+  background: rgba(39, 131, 120,0.5);
+}
+
+.startbattlebtn:hover {
+  background: rgba(39, 131, 120,0.8);
+}
+
 button.bg-turq-custom-500 {
   background: rgb(39, 131, 120)
 }
@@ -88,15 +96,17 @@ ul {
 }
 
 .startbattlediv {
-  margin-bottom: 40px;;
+  margin-top:40px;
+  margin-bottom: 40px;
 }
 
 .skip {
   margin: auto;
 }
 
+
 .barracksbtn {
-  background: rgba(39, 131, 120,0.4);
+  background: rgba(39, 131, 120,0.5);
   display: flex;
   justify-content: space-between;
   margin-bottom:30px;
@@ -104,8 +114,7 @@ ul {
 }
 
 .barracksbtn:hover {
-  background: rgb(39, 131, 120);
-
+  background: rgba(39, 131, 120,0.8);
 }
 
 .barracksbtn img {
@@ -120,6 +129,10 @@ ul {
   background-color: rgba(31, 41, 55,0.5);
   border: rgb(31 41 55) 2px solid;
   border-radius: 5px;
+}
+
+.winner {
+  max-width: 300px;
 }
 
 .winnerwrapper {
@@ -182,4 +195,24 @@ ul {
 }
 .subtitlebtl {
   /* padding:0; */
+}
+
+.titanimg {
+  max-width: 300px;
+}
+
+.titaneqpimg {
+  max-width: 300px;
+}
+
+.navtitle {
+  font-size: 18px;
+  color:white;
+}
+.subnavtitle {
+  font-weight: bold;
+}
+
+.leveluph3 {
+  margin-bottom: 40px;
 }

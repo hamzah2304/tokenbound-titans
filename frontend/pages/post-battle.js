@@ -1,8 +1,8 @@
 import React from "react";
 
 const PostBattle = () => {
-  const urlw = "https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY";
-  const urll = "https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY";
+  const urlw = "/obs2.jpg";
+  const urll = "/mon0.jpg";
   return (
     <div className="flex flex-col justify-center outerflexpost">
       {/* Winner Prize Card */}
@@ -12,11 +12,12 @@ const PostBattle = () => {
       <div className="flex mb-8 winnerwrapper">
         {/* Very Large Image Card */}
         <img src={urlw} alt="winner" className="winner w-full rounded-lg"/>
-        <div className="statschange flex justify-center items-center text-white font-bold py-2 px-4 rounded-lg ml-4">
+        <div className="statschange flex flex-col justify-center items-center text-white font-bold py-2 px-4 rounded-lg ml-4">
+          <h3 class='leveluph3'>Level <span className="turq-col">up</span>&nbsp;!</h3>
           <ul className="titanstats text-blue-500">
-            <li>Attack<span>+1</span></li>
-            <li>Speed<span>+2</span></li>
-            <li>Armour<span>+3</span></li>
+            <li>Attack<span>+3</span></li>
+            <li>Speed<span>+5</span></li>
+            <li>Armour<span>+1</span></li>
           </ul>
         </div>
       </div>
