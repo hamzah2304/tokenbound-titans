@@ -23,11 +23,11 @@ const TitanCard = ({url1, url2}) => {
       {/* Bullet points section */}
       <div className="border-t border-gray-700 py-4">
         <h3 className="text-lg font-medium mb-2">Stats</h3>
-        <ul className="list-disc pl-6 text-blue-500">
-          <li>Health</li>
-          <li>Attack</li>
-          <li>Speed</li>
-          <li>Armour</li>
+        <ul className="titanstats text-blue-500">
+          <li>Health<span>100</span></li>
+          <li>Attack<span>100</span></li>
+          <li>Speed<span>100</span></li>
+          <li>Armour<span>100</span></li>
         </ul>
       </div>
 

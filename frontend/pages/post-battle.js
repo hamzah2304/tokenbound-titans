@@ -1,63 +1,37 @@
 import React from "react";
 
 const PostBattle = () => {
+  const urlw = "https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY";
+  const urll = "https://dghzfw7hxglrmpfm63qqrykigxq7gx37ozncttsd3lwa2yymoj3a.arweave.net/GY-S2-e5lxY8rPbhCOFINeHzX392WinOQ9rsDWMMcnY";
   return (
-    <div className="flex flex-col items-center justify-center h-screen ">
-      <div className="flex mb-8">
-        {/* Winner Prize Card */}
-        <div className="flex flex-col items-center justify-center bg-green-500 text-white font-bold py-2 px-4 rounded-lg text-2xl mr-4">
-          + 0.5 ETH
-        </div>
-
+    <div className="flex flex-col justify-center outerflexpost">
+      {/* Winner Prize Card */}
+      <div className="wineth flex items-center justify-center text-white font-bold py-2 px-4 rounded-lg text-2xl mr-4">
+        <p>WINNER&nbsp;</p><span>+ 0.5 ETH</span>
+      </div>
+      <div className="flex mb-8 winnerwrapper">
         {/* Very Large Image Card */}
-        <div className="bg-gray-800 border border-black rounded-lg shadow-md p-8">
-          <div className="mb-6">
-            <img
-              src="/path/to/very_large_image.jpg"
-              alt="Very Large Image"
-              className="w-full rounded-lg"
-            />
-          </div>
-        </div>
-
-        {/* Stats Change Card */}
-        <div className="flex flex-col items-center justify-center bg-green-500 text-white font-bold py-2 px-4 rounded-lg ml-4">
-          Stats Change
+        <img src={urlw} alt="winner" className="winner w-full rounded-lg"/>
+        <div className="statschange flex justify-center items-center text-white font-bold py-2 px-4 rounded-lg ml-4">
+          <ul className="titanstats text-blue-500">
+            <li>Attack<span>+1</span></li>
+            <li>Speed<span>+2</span></li>
+            <li>Armour<span>+3</span></li>
+          </ul>
         </div>
       </div>
-
-      {/* Vertical whitespace */}
-      <div className="h-8" />
-
-      <div className="flex">
-        {/* Loser Prize Card */}
-        <div className="flex flex-col items-center justify-center bg-red-500 text-white font-bold py-2 px-4 rounded-lg mr-4">
+      <div className="losewrapper flex mb-8 winnerwrapper">
+        {/* Very small Image Card */}
+        <img src={urll} alt="loser" className="loser w-full rounded-lg"/>
+        <div className="losseth flex justify-center items-center font-bold py-2 px-4 rounded-lg ml-4">
           - 0.5 ETH
         </div>
-
-        {/* Small Image Card */}
-        <div className="bg-gray-800 border border-black rounded-lg shadow-md p-8">
-          <div className="mb-4">
-            <img
-              src="/path/to/small_image.jpg"
-              alt="Small Image"
-              className="w-full rounded-lg"
-            />
-          </div>
-        </div>
-
-        {/* Stats Change Card */}
-        <div className="flex flex-col items-center justify-center bg-green-500 text-white font-bold py-2 px-4 rounded-lg ml-4">
-          Stats Change
-        </div>
       </div>
 
-      {/* Vertical whitespace */}
-      <div className="h-8" />
-
       <div className="flex justify-end absolute bottom-0 right-0 mr-16 mb-4">
-        <button className="bg-blue-500 text-white font-bold py-8 px-16 rounded-lg text-xl shadow-md">
-          Go to Barracks
+        <button className="barracksbtn text-white font-bold py-4 px-8 rounded-lg text-xl shadow-md">
+          <img src="/barracks-svgrepo-com.svg" alt='barracks'></img>
+          <a href="http://localhost:3000/pre-battle">Go To Barracks</a>
         </button>
       </div>
     </div>

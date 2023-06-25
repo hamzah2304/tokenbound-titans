@@ -10,6 +10,7 @@ body {
   font-family: "Montserrat";
   font-weight: normal;
   box-shadow: inset 0px 0px 100px 30px rgba(62, 182, 168, 0.322);
+  min-height: 100vh;
 }
 h1 {
   margin-bottom: 1rem;
@@ -45,8 +46,16 @@ button.bg-turq-custom-500 {
   background: rgb(39, 131, 120)
 }
 
+.bg-turq-custom-500 {
+  background: rgb(39, 131, 120)
+}
+
 .invent-row {
   place-content: flex-start;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .invent-row > img {
@@ -55,3 +64,122 @@ button.bg-turq-custom-500 {
   border-radius:0.3em;
 }
 
+.titanstats li {
+  color: rgb(62, 182, 168);
+  margin-bottom:5px;
+}
+
+.titanstats li span {
+  margin-left: 10px;
+  font-size: 20px;
+  color:white;
+  font-weight: bold;
+  border-bottom: rgb(62, 182, 168) 1px solid;
+}
+
+.invbattle {
+  display: flex;
+  width: 100%;
+  place-content: space-between;
+}
+.invbattle img {
+  width: 45%;
+  height: 45%;
+}
+
+.startbattlediv {
+  margin-bottom: 40px;;
+}
+
+.skip {
+  margin: auto;
+}
+
+.barracksbtn {
+  background: rgba(39, 131, 120,0.4);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom:30px;
+  border-radius: 5px;;
+}
+
+.barracksbtn:hover {
+  background: rgb(39, 131, 120);
+
+}
+
+.barracksbtn img {
+  width:30px;
+  margin-right: 30px;
+}
+
+.outerflexpost {
+  width: min-content;
+  margin: auto;
+  padding: 50px;
+  background-color: rgba(31, 41, 55,0.5);
+  border: rgb(31 41 55) 2px solid;
+  border-radius: 5px;
+}
+
+.winnerwrapper {
+  width: max-content;
+}
+
+.wineth {
+  margin: 0;
+  margin-bottom:20px;
+  width:100%;
+  height: 50px;
+  border-radius: 5px;
+  background: rgba(255,255,255,0.1);
+  border: rgba(255,255,255,0.1) 1px solid;
+}
+
+.wineth span {
+  color:rgb(62, 182, 168);
+}
+
+.loser {
+  width:20%;
+  height:20%;
+}
+
+.losseth {
+  color:rgb(233, 108, 104);
+}
+
+.losewrapper {
+  margin:0;
+}
+
+.statschange {
+  width:200px;
+}
+
+#msg {
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+#hero-bar-txt {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+#villain-bar-txt {
+  padding-left: 10px;
+  padding-top: 5px;
+}
+
+.turq-col {
+  color: rgb(62, 182, 168);
+}
+
+.titlebtl {
+  margin-bottom: 0;
+}
+.subtitlebtl {
+  /* padding:0; */
+}
