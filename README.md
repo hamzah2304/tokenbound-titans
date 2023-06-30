@@ -1,6 +1,6 @@
 # tokenbound-titans
 
-Winner at ETHGlobal Waterloo 2023
+Overall Winner at ETHGlobal Waterloo 2023
 
 Project Description
 https://www.youtube.com/channel/UCHL7Iz9Sb4hNGwdBXJDDrpA
